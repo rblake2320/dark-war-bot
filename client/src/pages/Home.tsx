@@ -19,7 +19,7 @@ export default function Home() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-6">
+            <div className="hidden md:flex items-center gap-6">
                   <a href="/demo" className="text-sm hover:text-primary transition-colors">
                 DEMO
               </a>
@@ -45,7 +45,7 @@ export default function Home() {
                 SIGN IN
               </Button>
               <Button size="sm">REGISTER</Button>
-            </nav>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
