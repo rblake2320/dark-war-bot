@@ -8,6 +8,17 @@ A modern, feature-rich automation bot website for Dark War Survival game with an
 
 ## ✨ Features
 
+### 🆕 Enhanced Version Features
+
+This enhanced fork includes:
+- **Full Python Bot Implementation**: Complete working bot with OpenCV and PyAutoGUI
+- **Anti-Detection Strategies**: Bezier curve movement, timing randomization, break simulation
+- **Multi-Instance Support**: Run multiple accounts simultaneously
+- **Comprehensive Documentation**: Implementation guides, anti-detection strategies, troubleshooting
+- **Configuration System**: JSON-based configuration with validation
+- **Window Detection**: Automatic BlueStacks/emulator window detection
+- **Logging System**: Detailed logging with color support
+
 ### Website Features
 - **Modern Dark Theme**: Sleek dark interface with purple accent colors
 - **Responsive Design**: Fully responsive layout that works on all devices
@@ -27,6 +38,10 @@ The Dark War Survival Bot automates 21+ game tasks including:
 - **Protection**: Automatic shield activation
 
 ## 🚀 Quick Start
+
+### Website Development
+
+For website development:
 
 ### Prerequisites
 
@@ -51,6 +66,26 @@ pnpm dev
 
 The application will be available at `http://localhost:3000`
 
+### Python Bot Usage
+
+For running the actual automation bot:
+
+```bash
+# Navigate to bot directory
+cd bot
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Create configuration
+python main.py --create-config
+
+# Run the bot
+python main.py
+```
+
+See [Bot Implementation Guide](docs/guides/BOT_IMPLEMENTATION_GUIDE.md) for detailed instructions.
+
 ### Build for Production
 
 ```bash
@@ -65,6 +100,16 @@ pnpm preview
 
 ```
 dark-war-bot/
+├── bot/                    # Python bot implementation (NEW)
+│   ├── core/              # Main bot logic
+│   ├── utils/             # Utility modules
+│   ├── config/            # Configuration management
+│   ├── templates/         # UI template images
+│   ├── main.py            # Entry point
+│   ├── requirements.txt   # Python dependencies
+│   └── README.md          # Bot documentation
+├── docs/                   # Documentation (NEW)
+│   └── guides/            # Implementation guides
 ├── client/                 # Frontend application
 │   ├── public/            # Static assets
 │   │   ├── robot-logo.png
